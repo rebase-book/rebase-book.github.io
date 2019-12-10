@@ -1,0 +1,135 @@
+// Color Palette
+// @group Colors
+$color-palette: (
+  unique: (
+    black: #000,
+    white: #fff
+  ),
+  blue: (
+    lighter: #AECEE3,
+    light: #547E99,
+    base: #0D3E62,
+    dark: #0B476D
+  ),
+  gray: (
+    lighter: #D6D9DE,
+    light: #B4BCC1,
+    base: #6E7786,
+    darkest: #080E1A
+  ),
+  green: (
+    base: #38b87c
+  ),
+  red: (
+    base: #E84C3D
+  ),
+  orange: (
+    light: #FBBE7D,
+    base: #FAB266
+  )
+) !default;
+
+// Brand Colors
+// @group Colors
+$color-brand: (
+  primary: get-color(blue),
+  primaryGradation: get-color(blue, lighter),
+  secondary: get-color(red),
+  secondaryGradation: get-color(red, light)
+) !default;
+
+/// Map with different sizes
+$fontSize: (
+  xs: 1.5rem,
+  s: 1.8rem,
+  m: 2.4rem,
+  l: 3rem,
+  xl: 3.6rem,
+  xxl: 4.8rem,
+  xxxl: 5.8rem
+) !default;
+
+// Font Base
+//$font-base-family: Roboto, sans-serif;
+//$font-base-family: 'Indie Flower', cursive;
+$font-base-family: 'Barlow', sans-serif;
+$font-base-color: #000;
+$font-base-size: 1.8rem;
+$font-base-weight: 400;
+$font-base-line-height: 1.45;
+
+// Font Weight
+$font-light-weight: 200;
+$font-bold-weight: 700;
+
+// Font Meta
+$font-meta-size: get-font-size(s);
+$font-meta-color: get-color(gray);
+
+// Font Body
+$font-body-size: get-font-size(m);
+
+// Font Title
+$font-title-size: get-font-size(xl);
+
+// Font Subtitle
+$font-subtitle-size: get-font-size(l);
+$font-subtitle-color: get-color(gray);
+
+// Font H1-H6
+$font-level-1-size: get-font-size(l);
+$font-level-2-size: get-font-size(m);
+$font-level-3-size: get-font-size(m);
+$font-level-4-size: get-font-size(s);
+$layout-breakpoints: (
+  s: 480px,
+  m: 600px,
+  l: 767px,
+  xl: 1023px,
+  xxl: 1160px
+) !default;
+
+// Mobile First true or false?
+$mobile-first: true !default;
+
+// Layout Container Width
+$layout-container-width: 980px !default;
+
+// Layout Container Medium Width
+$layout-container-medium-width: 700px !default;
+
+// Layout Container XXL Width
+$layout-container-xxl-width: 1160px !default;
+
+// Space between items in layout like columns
+$layout-gutter-width: get-spacing-inline(l) !default;
+
+// Prevent-Space around the browser window
+$layout-prevent-spacing: get-spacing-inset(m) !default;
+
+// Define the number of columns which you want to have
+$layout-columns: 12 !default;
+
+// Liked frame photos with space inset
+$global-border-radius: 3px !default;
+
+$global-rounded-border-radius: 100px !default;
+
+$global-border-color: get-color(gray) !default;
+
+// Misc
+$border-color: get-color(gray, lighter) !default;
+$border-color-focus: get-brand(primary) !default;
+$border-width: 1px !default;
+$border-radius: 5px !default;
+$border-rounded-radius: 150px !default;
+
+$link-color: get-color-brand(secondary) !default;
+
+$link-hover-color: get-color-brand(secondaryGradation) !default;
+
+$link-visited-color: get-color(gray) !default;
+
+$link-ghost-color: get-color(unique, white) !default;
+
+$link-ghost-hover-color: get-color(blue, lighter) !default;

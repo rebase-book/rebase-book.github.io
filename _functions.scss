@@ -1,0 +1,170 @@
+$spacingInset: (
+  xs: 4px,
+  s: 8px,
+  m: 16px,
+  l: 32px,
+  xl: 64px,
+  xxl: 128px
+) !default;
+
+// Horizontal Spacing of like containers, sections
+$spacingStack: (
+  xs: 4px,
+  s: 8px,
+  m: 16px,
+  l: 32px,
+  xl: 64px,
+  xxl: 128px
+) !default;
+
+// Textareas, Inputs,Form Elements
+$spacingStretchInset: (
+  s: 8px 4px,
+  m: 12px 8px,
+  l: 24px 20px,
+  xl: 48px 40px
+) !default;
+
+// Buttons, Cell containers like data-table and list items
+$spacingSquish: (
+  s: 4px 8px,
+  m: 8px 16px,
+  l: 16px 32px,
+  xl: 32px 64px
+) !default;
+
+
+// Like flow like text from left to right
+$spacingInline: (
+  xxs: 2px,
+  xs: 4px,
+  s: 8px,
+  m: 16px,
+  l: 32px,
+  xl: 64px,
+  xxl: 128px
+) !default;
+
+/// Color
+/// Get a color from the global palette
+/// @group Colors
+/// @param {string} $scheme - Take the color which you need
+/// @param {string} $tone [base] - Use a different tone from the color
+@function get-color($scheme, $tone: base) {
+  @return map-get(map-get($color-palette, $scheme), $tone);
+}
+
+/// Breakpoint
+/// Using this for breakpoints
+/// @group Layout
+/// @param {string} $name
+@mixin breakpoint($name) {
+  $value: map-get($layout-breakpoints, $name);
+
+  @media screen and (min-width: $value) {
+    @content;
+  }
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/// Breakpoint
+/// Using this for breakpoints
+/// @group Layout
+/// @param {string} $name
+@mixin breakpoint($name) {
+  $value: map-get($layout-breakpoints, $name);
+
+  @media screen and (min-width: $value) {
+    @content;
+  }
+}
+
+/// Spacing Stack
+/// Get the Stack spacing of the map
+/// @group Spacing
+/// @param {string} $key
+@function get-spacing-stack($key) {
+  @if map-has-key($spacingStack, $key) {
+    @return map-get($spacingStack, $key);
+  }
+
+  @warn "The key #{$key} is not in the map ’$spacingStack’";
+  @return null;
+}
+
+/// Spacing Stretch
+/// Get the Stretch spacing of the map
+/// @group Spacing
+/// @param {string} $key
+@function get-spacing-stretch-inset($key) {
+  @if map-has-key($spacingStretchInset, $key) {
+    @return map-get($spacingStretchInset, $key);
+  }
+
+  @warn "The key #{$key} is not in the map ’$spacingStretchInset’";
+  @return null;
+}
+
+/// Spacing Inset
+/// Get the inset spacing of the map
+/// @group Spacing
+/// @param {string} $key
+@function get-spacing-inset($key) {
+  @if map-has-key($spacingInset, $key) {
+    @return map-get($spacingInset, $key);
+  }
+
+  @warn "The key #{$key} is not in the map ’$spacingInset’";
+  @return null;
+}
+
+/// Spacing Inline
+/// Get the Inline spacing of the map
+/// @group Spacing
+/// @param {string} $key
+@function get-spacing-inline($key) {
+  @if map-has-key($spacingInline, $key) {
+    @return map-get($spacingInline, $key);
+  }
+
+  @warn "The key #{$key} is not in the map ’$spacingInline’";
+  @return null;
+}
+/// Font size
+/// Get the size of a font
+/// @group Font
+/// @param {string} $key
+@function get-font-size($key) {
+  @if map-has-key($fontSize, $key) {
+    @return map-get($fontSize, $key);
+  }
+
+  @warn "The key #{$key} is not in the map ’$fontSize’";
+  @return null;
+}
+
+@mixin border($color: $border-color) {
+  @if variable-exists(border-radius) {
+    border-radius: $border-radius;
+  }
+  border: $border-width solid $color;
+}
+
+// Column
+// @group Layout
+@mixin column($column, $max-columns: 12) {
+  flex: 0 0 (100%/$max-columns)*$column;
+}
+@function get-color-brand($key) {
+  @if map-has-key($color-brand, $key) {
+    @return map-get($color-brand, $key);
+  }
+
+  @warn "The key #{$key} is not in the map ’$color-brand’";
+  @return null;
+}
