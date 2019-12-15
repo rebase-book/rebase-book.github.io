@@ -306,7 +306,11 @@ a.gumroad.o-center {
   padding: 0.6rem 2rem 0 !important;
   text-transform: uppercase;
   color: #555 !important;
-  margin-top: 0 !important; }
+  margin-top: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid #999; }
+  .o-cantainer-medium a.gumroad.o-center {
+    background-color: #fff !important; }
   a.gumroad.o-center .gumroad-button-logo {
     height: 20px !important;
     width: 20px !important; }

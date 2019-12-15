@@ -223,12 +223,24 @@ a {
 a.gumroad.o-center {
   font-size: 2rem !important;
   font-family: $font-base-family !important;
+  //font-weight: bold!important;
   padding: 0.6rem 2rem 0 !important;
   text-transform: uppercase;
-  color: #555!important;
+  color: #555 !important;
+  //color: white !important;
   margin-top: 0 !important;
+  //background-color: #93c47c!important;
+  //background-color: #f1c342!important;
+  //background-color: #f9e454!important;
+  box-shadow: none!important;
+  border: 1px solid #999;
+
+  .o-cantainer-medium & {
+    background-color: #fff!important;
+  }
 
   .gumroad-button-logo {
+    //display: none!important;
     height: 20px !important;
     width: 20px !important;
   }
