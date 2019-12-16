@@ -226,21 +226,20 @@ a.gumroad.o-center {
   //font-weight: bold!important;
   padding: 0.6rem 2rem 0 !important;
   text-transform: uppercase;
-  color: #555 !important;
-  //color: white !important;
+  //color: #555 !important;
+  color: white !important;
   margin-top: 0 !important;
+  background-image: none !important;
+    padding-top: 0!important;
   //background-color: #93c47c!important;
   //background-color: #f1c342!important;
   //background-color: #f9e454!important;
-  box-shadow: none!important;
-  border: 1px solid #999;
-
-  .o-cantainer-medium & {
-    background-color: #fff!important;
-  }
+  background-color: #E84C3D!important;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3)!important;
+  border-radius: 0!important;
 
   .gumroad-button-logo {
-    //display: none!important;
+    display: none!important;
     height: 20px !important;
     width: 20px !important;
   }
