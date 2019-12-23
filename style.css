@@ -15,7 +15,7 @@ body {
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1023px) {
     body {
       padding: 0; } }
 
@@ -300,10 +300,21 @@ a {
   a:focus {
     text-decoration: underline; }
 
+a.sample-link {
+  display: none;
+  text-decoration: none;
+  border-bottom: 1px solid #E84C3D;
+  font-weight: 500; }
+  @media screen and (min-width: 767px) {
+    a.sample-link {
+      display: inline-block;
+      margin-left: 3rem; } }
+
 a.gumroad.o-center {
-  font-size: 2rem !important;
+  font-size: 1.6rem !important;
   font-family: "Barlow", sans-serif !important;
-  padding: 0.6rem 2rem 0 !important;
+  font-weight: bold !important;
+  padding: 0.6rem 3.5rem 0 !important;
   text-transform: uppercase;
   color: white !important;
   margin-top: 0 !important;
@@ -321,3 +332,10 @@ a.gumroad.o-center {
   font-style: normal;
   display: block;
   font-size: 4rem; }
+
+.cover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ddd; }
+  @media screen and (min-width: 767px) {
+    .cover {
+      height: 650px; } }
