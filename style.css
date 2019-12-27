@@ -10,7 +10,7 @@ body {
   padding: 16px;
   color: #000;
   font-family: "Barlow", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
@@ -339,8 +339,7 @@ a.gumroad.o-center {
   margin: 0 auto; }
 
 .cover {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  border: 2px solid #ddd; }
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); }
 
 .ribbon {
   position: absolute;
@@ -391,55 +390,3 @@ a.gumroad.o-center {
   border-right: 3px solid #79A70A;
   border-bottom: 3px solid transparent;
   border-top: 3px solid #79A70A; }
-
-/* .window {
-	margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
-	text-align: center;
-}
-
-.image-container {
-	width: 2250px;
-	height: 300px;
-	position: relative;
-	transition: left 1s;
-	-webkit-transition: left 1s;
-	-moz-transition: left 1s;
-	-o-transition: left 1s;
-}
-
-.slide {
-	float: left;
-	margin: 0;
-	padding: 0;
-}
-
-.button-container {
-	top: -20px;
-	position: relative;
-}
-
-.slider-button {
-	display: inline-block;
-	height: 10px;
-	width: 10px;
-	border-radius: 5px;
-	background-color: #fff;
-}
-
-#slide-1:target ~ .image-container {
-	left: 0;
-}
-
-#slide-2:target ~ .image-container {
-	left: -450px;
-}
-
-#slide-3:target ~ .image-container {
-	left: -900px;
-}
-
-#slide-4:target ~ .image-container {
-	left: -1350px;
-} */
