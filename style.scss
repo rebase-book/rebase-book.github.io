@@ -316,3 +316,24 @@ a.gumroad.o-center {
   border-bottom: 3px solid transparent;
   border-top: 3px solid #79A70A;
 }
+
+.chapter-breakdown {
+  background: #f5f5f5;
+  padding: 2.5rem 4rem;
+  margin-top: 4rem;
+  h5 {
+    text-transform: none;
+  }
+  list-style: none;
+  > li {
+    margin-top: 1.4rem;
+  }
+  ul {
+    margin-top: 1.2rem;
+    margin-left: 2.2rem;
+  }
+}
+
+summary:hover {
+  cursor: pointer;
+}
