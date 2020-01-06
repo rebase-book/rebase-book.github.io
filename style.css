@@ -305,16 +305,16 @@ a.sample-link {
   text-decoration: none;
   border-bottom: 1px solid #E84C3D;
   font-weight: 500; }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1023px) {
     a.sample-link {
       display: inline-block;
-      margin-left: 2.8rem; } }
+      margin-left: 2.5rem; } }
 
 a.gumroad.o-center {
   font-size: 1.6rem !important;
   font-family: "Barlow", sans-serif !important;
   font-weight: bold !important;
-  padding: 0.6rem 3.5rem 0 !important;
+  padding: 0.6rem 3rem 0 !important;
   text-transform: uppercase;
   color: white !important;
   margin-top: 0 !important;

@@ -226,9 +226,9 @@ a.sample-link {
   border-bottom: 1px solid #E84C3D;
   font-weight: 500;
 
-  @include breakpoint(l) {
+  @include breakpoint(xl) {
     display: inline-block;
-    margin-left: 2.8rem;
+    margin-left: 2.5rem;
   }
 }
 
@@ -236,7 +236,7 @@ a.gumroad.o-center {
   font-size: 1.6rem !important;
   font-family: $font-base-family !important;
   font-weight: bold!important;
-  padding: 0.6rem 3.5rem 0 !important;
+  padding: 0.6rem 3rem 0 !important;
   text-transform: uppercase;
   //color: #555 !important;
   color: white !important;
