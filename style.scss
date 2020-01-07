@@ -223,8 +223,9 @@ a {
 a.sample-link {
   display: none;
   text-decoration: none;
-  border-bottom: 1px solid #E84C3D;
+  border-bottom: 1px solid #547e99;
   font-weight: 500;
+  color: #547e99;
 
   @include breakpoint(xl) {
     display: inline-block;
