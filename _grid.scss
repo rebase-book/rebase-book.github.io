@@ -132,6 +132,11 @@
       width: calc(20% - #{$layout-gutter-width});
     }
   }
+  &__column--x-large-1-2 {
+    @include breakpoint(xl) {
+      width: calc(50% - #{$layout-gutter-width});
+    }
+  }
 }
 
 .o-distance {

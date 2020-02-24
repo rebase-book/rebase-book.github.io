@@ -118,6 +118,9 @@ body {
   @media screen and (min-width: 767px) {
     .o-grid__column--large-1-5 {
       width: calc(20% - 32px); } }
+  @media screen and (min-width: 1023px) {
+    .o-grid__column--x-large-1-2 {
+      width: calc(50% - 32px); } }
 
 .o-distance {
   margin-top: 32px; }
@@ -301,15 +304,13 @@ a {
     text-decoration: underline; }
 
 a.sample-link {
-  display: none;
+  display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #547e99;
   font-weight: 500;
-  color: #547e99; }
-  @media screen and (min-width: 1023px) {
-    a.sample-link {
-      display: inline-block;
-      margin-left: 2.5rem; } }
+  color: #547e99;
+  margin-top: 8px;
+  font-size: 0.9em; }
 
 a.gumroad.o-center {
   font-size: 1.6rem !important;
@@ -407,3 +408,32 @@ a.gumroad.o-center {
 
 summary:hover {
   cursor: pointer; }
+
+.o-heading__subtitle.c-subtitle {
+  text-align: center;
+  font-size: 1.4em; }
+  @media screen and (min-width: 600px) {
+    .o-heading__subtitle.c-subtitle {
+      margin-top: 32px;
+      text-align: left; } }
+  @media screen and (min-width: 767px) {
+    .o-heading__subtitle.c-subtitle {
+      margin-top: 64px;
+      font-size: 1.8em;
+      line-height: 1.3; } }
+  @media screen and (min-width: 1023px) {
+    .o-heading__subtitle.c-subtitle {
+      margin-top: 86px; } }
+
+.buttons {
+  text-align: center; }
+  @media screen and (min-width: 600px) {
+    .buttons {
+      text-align: left; } }
+
+.stars {
+  line-height: 1;
+  margin-top: 6px; }
+  @media screen and (min-width: 1023px) {
+    .stars {
+      margin-left: -1em; } }
