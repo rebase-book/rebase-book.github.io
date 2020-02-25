@@ -98,7 +98,7 @@
     }
   }
   &__column--medium-1-3 {
-    @include breakpoint(l) {
+    @include breakpoint(m) {
       width: calc(33.33% - #{$layout-gutter-width});
     }
   }

@@ -228,6 +228,10 @@ a.sample-link {
   color: #547e99;
   margin-top: 8px;
   font-size: 0.9em;
+
+  @include breakpoint(xl) {
+    margin-left: -2em;
+  }
 }
 
 a.gumroad.o-center {
@@ -337,23 +341,21 @@ summary:hover {
   cursor: pointer;
 }
 
+
 .o-heading__subtitle.c-subtitle {
+  margin-top: 12px;
+  text-transform: none;
+  font-weight: 400;
   text-align: center;
   font-size: 1.4em;
 
   @include breakpoint(m) {
-    margin-top: 32px;
     text-align: left;
   }
 
-  @include breakpoint(l) {
-    margin-top: 64px;
+  @include breakpoint(xl) {
     font-size: 1.8em;
     line-height: 1.3;
-  }
-
-  @include breakpoint(xl) {
-    margin-top: 86px;
   }
 }
 
@@ -366,10 +368,70 @@ summary:hover {
 }
 
 .stars {
+  color: #BBB;
+  margin: 0;
   line-height: 1;
-  margin-top: 6px;
+  text-align: center;
+  font-weight: 500;
+
+  @include breakpoint(l) {
+    text-align: left;
+    margin-top: 64px;
+  }
 
   @include breakpoint(xl) {
-    margin-left: -1em;
+    text-align: left;
+    margin-top: 96px;
+  }
+}
+
+.testimonial {
+
+  img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    max-width: 120px;
+
+    @include breakpoint(m) {
+      margin-top: 16px;
+    }
+
+    @include breakpoint(l) {
+      margin-right: 4rem;
+    }
+  }
+
+  blockquote {
+    text-align: center;
+    margin-top: -0.5em;
+
+    p {
+      color: #e27629;
+      margin-top: 0;
+
+      @include breakpoint(m) {
+        font-size: 2.5rem;
+      }
+    }
+
+    cite {
+      font-size: 1.8rem;
+      font-style: normal;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1a202c;
+    }
+
+    @include breakpoint(m) {
+      margin-left: -2rem;
+      text-align: left;
+    }
+
+    @include breakpoint(xl) {
+      margin-bottom: -2rem;
+    }
   }
 }
