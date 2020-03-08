@@ -491,3 +491,15 @@ summary:hover {
     @media screen and (min-width: 600px) {
       .testimonial blockquote {
         text-align: left; } }
+
+.intro-info a {
+  text-decoration: none;
+  font-weight: 500; }
+
+.intro-info img {
+  border-radius: 50%;
+  max-width: 50px;
+  border: 2px solid white;
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 5px; }

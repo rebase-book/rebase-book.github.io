@@ -449,3 +449,19 @@ summary:hover {
 
   }
 }
+
+.intro-info {
+
+  a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+  img {
+    border-radius: 50%;
+    max-width: 50px;
+    border: 2px solid white;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+}
