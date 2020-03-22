@@ -228,9 +228,6 @@ a.sample-link {
   color: #547e99;
   margin-top: 8px;
   font-size: 0.9em;
-
-  @include breakpoint(xl) {
-  }
 }
 
 a.gumroad.o-center {
