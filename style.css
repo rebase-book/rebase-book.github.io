@@ -312,9 +312,6 @@ a.sample-link {
   color: #547e99;
   margin-top: 8px;
   font-size: 0.9em; }
-  @media screen and (min-width: 1023px) {
-    a.sample-link {
-      margin-left: -3em; } }
 
 a.gumroad.o-center {
   font-size: 1.8rem !important;
