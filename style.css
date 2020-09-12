@@ -500,3 +500,14 @@ summary:hover {
   vertical-align: middle;
   display: inline-block;
   margin-bottom: 5px; }
+
+summary h4 {
+  display: inline-block;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 2rem; }
+
+.faq-list {
+  list-style: none; }
+  .faq-list li {
+    margin-top: 1em; }

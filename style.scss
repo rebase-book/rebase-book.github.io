@@ -461,3 +461,18 @@ summary:hover {
     margin-bottom: 5px;
   }
 }
+
+summary h4 {
+  display: inline-block;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.faq-list {
+  list-style: none;
+
+  li {
+    margin-top: 1em;
+  }
+}
